@@ -13,8 +13,11 @@
         <header>
             <h3>
                 <a href="/">Home</a>
+                {{#if loggedIn}}
                 <button id="logout" class="btn-no-style">logout</button>
+                {{else}}
                 <a href="/login">login</a>
+                {{/if}}
             </h3>
         </header>
         <div>
@@ -27,7 +30,9 @@
             Thanks for visiting the tech blog. Happy blogging, techeronis.
         </footer>
     </div>
+    {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
