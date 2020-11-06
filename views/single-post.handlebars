@@ -4,6 +4,7 @@
     </div>
     <div class="meta">
         <span>{{post.content}}</span>
+        <br>
         <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
     </div>
 
@@ -17,6 +18,7 @@
         </div>
     </form>
 
+    <h3>Comments</h3>
     <div class="comments">
         {{#each post.comments}}
         <section class="comment">
@@ -31,3 +33,5 @@
     </div>
 
 </article>
+
+<script src="/javascript/comment.js"></script>
