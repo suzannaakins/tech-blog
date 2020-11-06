@@ -9,3 +9,9 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgb(19, 179, 27);
   }
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
