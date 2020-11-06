@@ -13,6 +13,10 @@
     display: inline;
     text-align: right;
   }
+
+  nav li {
+    float: left;
+  }
   
   body, html {
     padding: 10px 35px;

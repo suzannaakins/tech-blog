@@ -16,18 +16,18 @@
             </h1>
             <nav>
                 <ul>
-                {{#if loggedIn}}
-                <li>
-                <a href="/dashboard">Dashboard</a>
-                </li>
-                <li>
-                <button id="logout" class="btn-no-style">Logout</button>
-                </li>
-                {{else}}
-                <li>
-                <a href="/login">Login</a>
-                </li>
-                {{/if}}
+                    {{#if loggedIn}}
+                    <li>
+                        <a href="/dashboard">Dashboard</a>
+                    </li>
+                    <li>
+                        <button id="logout" class="btn-no-style">Logout</button>
+                    </li>
+                    {{else}}
+                    <li>
+                        <a href="/login">Login</a>
+                    </li>
+                    {{/if}}
                 </ul>
             </nav>
         </header>
