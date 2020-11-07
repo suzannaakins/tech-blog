@@ -10,8 +10,11 @@ const PORT = process.env.PORT || 3001;
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
-    secret: 'I like deviled eggs.',
-    cookie: {},
+    secret: DB_SECRET,
+    //sign out user if site idle for 1 min.
+    cookie: {
+        maxAge: 1 * 60 * 1000 // 1 minutes
+    },
     resave: false,
     saveUnitialized: true,
     store: new SequelizeStore({
