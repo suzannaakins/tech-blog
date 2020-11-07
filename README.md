@@ -1,38 +1,37 @@
-# tech-blog
-Developers can publish their blog posts here, and they can comment on other developers’ posts as well.
 
-GIVEN a CMS-style blog site
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-WHEN I click on the homepage option
-THEN I am taken to the homepage
-WHEN I click on any other links in the navigation
-THEN I am prompted to either sign up or sign in
-WHEN I choose to sign up
-THEN I am prompted to create a username and password (POST /api/users/ route)
-WHEN I click on the sign-up button
-THEN my user credentials are saved and I am logged into the site
-WHEN I revisit the site at a later time and choose to sign in
-THEN I am prompted to enter my username and password
-WHEN I am signed in to the site
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
-WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created (post model needs title, blog content, and date made, and user who posted it. tied to comment model)
-WHEN I click on an existing blog post
-THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-WHEN I enter a comment and click on the submit button while signed in
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-WHEN I click on the dashboard option in the navigation
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-WHEN I click on the button to add a new blog post
-THEN I am prompted to enter both a title and contents for my blog post
-WHEN I click on the button to create a new blog post
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
-WHEN I click on the logout option in the navigation
-THEN I am signed out of the site
-WHEN I am idle on the page for more than a set time
-THEN I am automatically signed out of the site 
+# Tech Blog
 
-Steps
+## Description
+This is my first full stack application, where I developed the backend using sequelize to create databases, and routes. Then I used handlebars to make the front end HTML templates.  
+
+It was challenging to keep track of so many folders and files, but all came together in the end!  I am still having issues with trying to reset the login and signup forms, but nothing seems to fix it.
+
+Here is a preview of the website: 
+
+![Preview](./utils/photos/screenshot.png)
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+## Installation
+To install necessary dependencies, run the following command:
+npm install express sequelize mysql2 dotenv
+
+## Usage
+You will need to populate the connection with YOUR DB_NAME and DB_PASSWORD for mysql2.
+Use the finished app at [Tech Blog Website](https://quiet-hamlet-13328.herokuapp.com/).
+
+## Contributing
+Be my guest!
+
+## Tests
+To run tests, run the following command: 
+npm test
+
+## Questions
+If you have any questions about the repo, open an issue or contact me directly on LinkedIn.
+You can find more of my work at github.com/suzannaakins.
