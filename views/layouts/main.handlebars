@@ -25,18 +25,24 @@
                     </li>
                     {{else}}
                     <li>
+                        <a href="/dashboard">Dashboard</a>
+                    </li>
+                    <li>
                         <a href="/login">Login</a>
                     </li>
                     {{/if}}
                 </ul>
             </nav>
         </header>
+
         <main>
             {{{ body }}}
         </main>
+        
         <footer>
             Thanks for visiting the tech blog. Happy blogging, techeronis.
         </footer>
+        
     </div>
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>

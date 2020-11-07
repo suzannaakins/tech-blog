@@ -1,15 +1,23 @@
 * {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0px 10px;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+  }
+
+  header a {
+    padding-top: 10px;
   }
 
   header nav {
+    padding-top: 10px;
     display: inline;
     text-align: right;
   }
@@ -19,15 +27,38 @@
   }
   
   body, html {
-    padding: 10px 35px;
+    margin: 0;
     height: 100%;
     color: rgb(19, 179, 27);
   }
+  
+  main {
+      margin: 0 25px;
+  }
+
+#page-title {
+  padding: 0 15px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  text-align: center;
+}
 
 li {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
+}
+
+.newpost-title {
+  background-color: rgb(59, 59, 59);
+}
+
+.title {
+  background-color: rgb(59, 59, 59);
+}
+.comments {
+  padding: 10px 0;
+  border-bottom: 1px solid;
 }
 
 .btn-no-style {
@@ -36,7 +67,7 @@ li {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: rgb(5, 133, 11);
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -45,26 +76,18 @@ li {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #7bffa7;
 }
 
-a {
+a, li button {
 text-decoration: none;
-color: #225ca3;
+color: rgb(5, 133, 11);
 font-weight: bold;
 transition: color .1s;
 }
 
 a:hover {
-color: #3486eb;
-}
-
-footer {
-  display: flex;
-  justify-content: left;
-  font-size: 90%;
-  margin-bottom: 0px;
-  padding-top: 50px;
+color: #7bffa7;
 }
 
 .comment-form {
@@ -85,4 +108,21 @@ footer {
   font-size: 90%;
   margin-bottom: .5%;
   opacity: .6;
+}
+
+.login-form, .signup-form, .newpost-form {
+  padding-bottom: 15px;
+}
+
+.login-button, .signup-button {
+  margin-top: 10px;
+}
+
+.username-fill {
+  margin-bottom: 10px;
+}
+
+footer {
+  justify-content: center;
+  bottom: 0;
 }
